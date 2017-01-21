@@ -1,0 +1,42 @@
+body
+{
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+body:after
+{
+  color: #fff;
+  content: "320px and below";
+  font-weight: bold;
+  position: fixed;
+  width: 100%;
+  bottom: 100px;
+  border-radius: 20px;
+  text-align: center;
+  padding: 15px 0 15px;
+  font-size: 20px;
+  background-color: #212A34;
+  box-sizing: border-box;
+}
+
+@media only screen and (min-width: 480px) {
+  body:after{
+    content: "480px to 768px";
+    background-color: #8EC150;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  body:after{
+    content: "768px to 1024px";
+    background-color: #5F5F5F;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body:after{
+    content: "1024px and up";
+    background-color: #FBBC05;
+  }
+}
